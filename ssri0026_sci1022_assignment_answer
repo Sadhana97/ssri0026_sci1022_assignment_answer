@@ -1,0 +1,26 @@
+**Part 1:**
+- Command used to create new directory (ebooks): $ mkdir ebooks/
+- Command used to download the ebook from given link and name it "hamlet.txt" : $ curl <link> -o hamlet.txt
+        - Output: Snapshot of Average Dload, Speed Upload, Time total etc
+
+**Part 2:**
+- Command used to change the current working directory: $ cd /usr/lib
+- Command used to display size and permission (absolute path): $ ls -l ~/ebooks/hamlet.txt
+        - Output: Permissions and size in bytes as requried= -rw-rw-r--+ 1 ssri0026 Domain Users 184406 Mar 21 22:07 /home/ssri0026/ebooks/hamlet.txt  >- relative path ????????
+
+
+**Part 3:**
+- Command used to print number of lines, words, bytes: $ wc ~/ebooks/hamlet.txt
+        - Output: 5307 32252 184406 /home/ssri0026/ebooks/hamlet.txt
+-checking ???
+
+
+**Part 4:**
+- Command used to output line #3447: $ head -3447 ~/ebooks/hamlet.txt|tail -1
+        - Output: Is thought-sicke at the act
+
+**Part 5:**
+- Command used to count the number of lines in which "hamlet" appears: $ grep hamlet ~/ebooks/hamlet.txt|wc
+        -Output: 0    0    0
+- Command used to count the number of lines in which "**H**amlet" appears: $ grep Hamlet ~/ebooks/hamlet.txt|wc
+        - Output: 108  694  4226
