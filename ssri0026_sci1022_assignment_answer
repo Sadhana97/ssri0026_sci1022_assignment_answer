@@ -7,12 +7,17 @@
 - Command used to change the current working directory: $ cd /usr/lib
 - Command used to display size and permission (absolute path): $ ls -l ~/ebooks/hamlet.txt
         - Output: Permissions and size in bytes as requried= -rw-rw-r--+ 1 ssri0026 Domain Users 184406 Mar 21 22:07 /home/ssri0026/ebooks/hamlet.txt  >- relative path ????????
-
+- Command used to display size and permission (relative path):
+- (For Part 3 checking)
+	- Command used to store the number of bytes into bytes.txt: $ echo "184406" > bytes.txt)
 
 **Part 3:**
 - Command used to print number of lines, words, bytes: $ wc ~/ebooks/hamlet.txt
         - Output: 5307 32252 184406 /home/ssri0026/ebooks/hamlet.txt
--checking ???
+- Command used to store the number of bytes into bytes_compare.txt: $ echo "184406" > bytes_compare.txt
+- Command used to compare and check if the number of bytes are the same in Part 2 and 3: $ diff bytes.txt bytes_compare.txt 
+	- Output: Indicates that both files are an exact match and the number of bytes obtained in task 3 = task 2. 
+#NOTE: Check through the above method is rather tedious as the number of bytes can be compared visually. 
 
 
 **Part 4:**
